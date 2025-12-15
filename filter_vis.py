@@ -132,11 +132,12 @@ def main():
 
     with st.sidebar:
         st.header("Data source")
-        base_dir = st.text_input(
-            "Recorder directory",
-            value="TEST/recorder_juwels",
-            help="Directory where SampleRecorder writes JSON + images.",
-        )
+        # base_dir = st.text_input(
+        #     "Recorder directory",
+        #     value="TEST/recorder_juwels",
+        #     help="Directory where SampleRecorder writes JSON + images.",
+        # )
+        base_dir = "data"
         
         # Get available runs from JSON files in the directory
         available_runs = get_available_runs(base_dir)
