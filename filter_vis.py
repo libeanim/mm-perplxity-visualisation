@@ -68,7 +68,7 @@ def get_image_paths(
     img_keys = sample.get("images") or []
     img_paths: List[str] = []
     for key in img_keys:
-        img_path = os.path.join(base_dir, run_name, key)
+        img_path = os.path.join(base_dir, "images", key)
         if os.path.exists(img_path):
             img_paths.append(img_path)
     return img_paths
